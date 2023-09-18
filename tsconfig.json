@@ -1,5 +1,4 @@
 {
-  "files": [],
   "compilerOptions": {
     "strict": true,
     "allowJs": true,
@@ -9,6 +8,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "types": ["node"],
     "declaration": true,
     "outDir": "dist",
