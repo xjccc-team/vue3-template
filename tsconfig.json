@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": ["*.d.ts", "src/**/*", "src/**/*.vue"],
   "exclude": ["node_modules"]
 }
