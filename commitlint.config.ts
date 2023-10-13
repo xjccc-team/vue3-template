@@ -1,5 +1,5 @@
-/** @type {import('cz-git').UserConfig} */
-module.exports = {
+import type { UserConfig } from 'cz-git'
+const config: UserConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'type-enum': [
@@ -88,3 +88,5 @@ module.exports = {
     ]
   }
 }
+
+export default config
