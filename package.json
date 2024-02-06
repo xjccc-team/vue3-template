@@ -42,7 +42,7 @@
     "@types/node": "^18.19.7",
     "@types/qs": "^6.9.11",
     "@vitejs/plugin-vue": "^4.6.2",
-    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^11.0.3",
     "@vue/tsconfig": "^0.5.0",
     "commitizen": "^4.3.0",
