@@ -39,7 +39,7 @@ devDependencies:
     version: 20.11.21
   '@types/qs':
     specifier: ^6.9.11
-    version: 6.9.11
+    version: 6.9.12
   '@vitejs/plugin-vue':
     specifier: ^5.0.3
     version: 5.0.4(vite@5.1.4)(vue@3.4.20)
@@ -742,8 +742,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/qs@6.9.11:
-    resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
+  /@types/qs@6.9.12:
+    resolution: {integrity: sha512-bZcOkJ6uWrL0Qb2NAWKa7TBU+mJHPzhx9jjLL1KHF+XpzEcR7EXHvjbHlGtR/IsP1vyPrehuS6XqkmaePy//mg==}
     dev: true
 
   /@types/semver@7.5.6:
