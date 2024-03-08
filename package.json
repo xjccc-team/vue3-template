@@ -43,7 +43,7 @@
     "@types/qs": "^6.9.12",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
-    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
     "commitizen": "^4.3.0",
     "cz-git": "^1.8.0",
