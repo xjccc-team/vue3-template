@@ -28,6 +28,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^19.1.0
     version: 19.1.0
+  '@eslint/eslintrc':
+    specifier: ^3.0.2
+    version: 3.0.2
   '@rushstack/eslint-patch':
     specifier: ^1.10.1
     version: 1.10.1
