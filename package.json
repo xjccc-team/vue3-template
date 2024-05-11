@@ -31,7 +31,7 @@
     "axios": "^1.6.8",
     "pinia": "^2.1.7",
     "qs": "^6.12.1",
-    "vue": "^3.4.25",
+    "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "@eslint/eslintrc": "^3.0.2",
     "@rushstack/eslint-patch": "^1.10.2",
     "@tsconfig/node18": "^18.2.4",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.11",
     "@types/qs": "^6.9.15",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
@@ -48,16 +48,16 @@
     "@vue/tsconfig": "^0.5.1",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.1",
-    "eslint": "^9.1.1",
-    "eslint-plugin-vue": "^9.25.0",
+    "eslint": "^9.2.0",
+    "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.0.11",
     "less": "^4.2.0",
     "lint-staged": "^15.2.2",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
     "typescript": "~5.4.5",
-    "unplugin-auto-import": "^0.17.5",
-    "vite": "^5.2.10",
-    "vue-tsc": "^2.0.14"
+    "unplugin-auto-import": "^0.17.6",
+    "vite": "^5.2.11",
+    "vue-tsc": "^2.0.17"
   }
 }
