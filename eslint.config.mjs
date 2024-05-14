@@ -1,37 +1,33 @@
-import { FlatCompat } from '@eslint/eslintrc'
-import js from '@eslint/js'
-import path from 'path'
-import { fileURLToPath } from 'url'
+// eslint.config.mjs
+import antfu from '@antfu/eslint-config'
 
-// mimic CommonJS variables -- not needed if using CommonJS
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const compat = new FlatCompat({
-  baseDirectory: __dirname
-})
-
-export default [
-  js.configs.recommended,
+export default antfu(
   {
-    ignores: [
-      'node_modules/*',
-      'dist/*',
-      '.output',
-      '.data'
-    ]
-  },
-  ...compat.config({
-    root: true,
-    extends: [
-      'plugin:vue/essential',
-      '@vue/eslint-config-typescript/recommended',
-      '@vue/eslint-config-prettier/skip-formatting'
-    ],
-    parserOptions: {
-      ecmaVersion: 'latest'
+    typescript: true,
+    vue: true,
+    md: true,
+    stylistic: {
+      indent: 2,
+      quotes: 'single',
+      semi: false
     },
+    lessOpinionated: true
+  },
+  {
     rules: {
-      'vue/multi-word-component-names': 0
+      'vue/block-order': 0,
+      'no-console': 0,
+      'node/prefer-global/process': 0,
+      'style/comma-dangle': [2, 'never'],
+      'function-paren-newline': ['error', 'multiline'],
+      'object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
+      'object-curly-spacing': ['error', 'always'],
+      'object-curly-newline': ['error', {
+        multiline: true,
+        consistent: true
+      }],
+      'style/space-before-function-paren': [2, 'always'],
+      'style/space-before-blocks': [2, 'always']
     }
-  })
-]
+  }
+)
