@@ -1,4 +1,5 @@
 import type { UserConfig } from 'cz-git'
+
 const config: UserConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
@@ -77,7 +78,7 @@ const config: UserConfig = {
       },
       {
         value: 'chore',
-        name: "chore: Other changes that don't modify src or test files",
+        name: 'chore: Other changes that don\'t modify src or test files',
         emoji: '♻️'
       },
       {
