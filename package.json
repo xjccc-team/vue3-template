@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "postinstall": "husky init && pnpm echo:husky",
     "echo:husky": "echo 'npm run lint' > .husky/pre-commit && echo 'npx --no-install commitlint --edit \"$1\"' > .husky/commit-msg",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "prepare": "husky"
   },
   "dependencies": {
     "axios": "^1.6.8",
