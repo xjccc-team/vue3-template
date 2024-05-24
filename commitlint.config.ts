@@ -3,25 +3,7 @@ import type { UserConfig } from 'cz-git'
 const config: UserConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
-    'type-enum': [
-      2,
-      'always',
-      [
-        'feat',
-        'fix',
-        'update',
-        'docs',
-        'style',
-        'refactor',
-        'test',
-        'revert',
-        'bug',
-        'build',
-        'ci',
-        'chore',
-        'perf'
-      ]
-    ]
+    'type-enum': [2, 'always', ['feat', 'fix', 'update', 'docs', 'style', 'refactor', 'test', 'revert', 'bug', 'build', 'ci', 'chore', 'perf']]
   },
   prompt: {
     useEmoji: true,
@@ -78,7 +60,7 @@ const config: UserConfig = {
       },
       {
         value: 'chore',
-        name: 'chore: Other changes that don\'t modify src or test files',
+        name: `chore: Other changes that don't modify src or test files`,
         emoji: '♻️'
       },
       {

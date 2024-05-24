@@ -1,33 +1,33 @@
 // eslint.config.mjs
 import antfu from '@antfu/eslint-config'
+import pluginVue from 'eslint-plugin-vue'
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 
 export default antfu(
   {
     typescript: true,
     vue: true,
     md: true,
-    stylistic: {
-      indent: 2,
-      quotes: 'single',
-      semi: false
-    },
+    stylistic: false,
     lessOpinionated: true
   },
+  ...pluginVue.configs['flat/recommended'],
+  eslintPluginPrettierRecommended,
   {
     rules: {
       'vue/block-order': 0,
       'no-console': 0,
       'node/prefer-global/process': 0,
-      'style/comma-dangle': [2, 'never'],
       'function-paren-newline': ['error', 'multiline'],
       'object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
       'object-curly-spacing': ['error', 'always'],
-      'object-curly-newline': ['error', {
-        multiline: true,
-        consistent: true
-      }],
-      'style/space-before-function-paren': [2, 'always'],
-      'style/space-before-blocks': [2, 'always']
+      'object-curly-newline': [
+        'error',
+        {
+          multiline: true,
+          consistent: true
+        }
+      ]
     }
   }
 )
