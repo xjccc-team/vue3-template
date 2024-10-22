@@ -41,7 +41,7 @@
     "husky": "^9.1.6",
     "less": "^4.2.0",
     "lint-staged": "^15.2.10",
-    "npm-run-all2": "^6.2.4",
+    "npm-run-all2": "^7.0.0",
     "prettier": "^3.3.3",
     "typescript": "~5.6.3",
     "unplugin-auto-import": "^0.18.3",
