@@ -61,8 +61,8 @@ importers:
         specifier: ^5.2.3
         version: 5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(prettier@3.5.3)
       eslint-plugin-vue:
-        specifier: ^9.32.0
-        version: 9.32.0(eslint@9.21.0(jiti@2.4.2))
+        specifier: ^10.0.0
+        version: 10.0.0(eslint@9.21.0(jiti@2.4.2))(vue-eslint-parser@9.4.3(eslint@9.21.0(jiti@2.4.2)))
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -1382,6 +1382,13 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
 
+  eslint-plugin-vue@10.0.0:
+    resolution: {integrity: sha512-XKckedtajqwmaX6u1VnECmZ6xJt+YvlmMzBPZd+/sI3ub2lpYZyFnsyWo7c3nMOQKJQudeyk1lw/JxdgeKT64w==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      vue-eslint-parser: ^10.0.0
+
   eslint-plugin-vue@9.32.0:
     resolution: {integrity: sha512-b/Y05HYmnB/32wqVcjxjHZzNpwxj1onBOvqW89W+V+XNG1dRuaFbNd3vT9CLbr2LXjEoq+3vn8DanWf7XU22Ug==}
     engines: {node: ^14.17.0 || >=16.0.0}
@@ -2531,11 +2538,6 @@ packages:
 
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
-    hasBin: true
-
-  semver@7.6.3:
-    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
-    engines: {node: '>=10'}
     hasBin: true
 
   semver@7.7.1:
@@ -4307,6 +4309,17 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.26.0(@typescript-eslint/parser@8.26.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
 
+  eslint-plugin-vue@10.0.0(eslint@9.21.0(jiti@2.4.2))(vue-eslint-parser@9.4.3(eslint@9.21.0(jiti@2.4.2))):
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.21.0(jiti@2.4.2))
+      eslint: 9.21.0(jiti@2.4.2)
+      natural-compare: 1.4.0
+      nth-check: 2.1.1
+      postcss-selector-parser: 6.0.15
+      semver: 7.7.1
+      vue-eslint-parser: 9.4.3(eslint@9.21.0(jiti@2.4.2))
+      xml-name-validator: 4.0.0
+
   eslint-plugin-vue@9.32.0(eslint@9.21.0(jiti@2.4.2)):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.21.0(jiti@2.4.2))
@@ -4315,7 +4328,7 @@ snapshots:
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.15
-      semver: 7.6.3
+      semver: 7.7.1
       vue-eslint-parser: 9.4.3(eslint@9.21.0(jiti@2.4.2))
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
@@ -5629,8 +5642,6 @@ snapshots:
 
   semver@5.7.2:
     optional: true
-
-  semver@7.6.3: {}
 
   semver@7.7.1: {}
 
