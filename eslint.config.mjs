@@ -1,7 +1,18 @@
 // eslint.config.mjs
 import antfu from '@antfu/eslint-config'
-import pluginVue from 'eslint-plugin-vue'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import pluginVue from 'eslint-plugin-vue'
+
+const vueFiles = ['*.vue', '**/*.vue']
+
+const vueRecommended = pluginVue.configs['flat/recommended'].map((config) => {
+  if (config.name === 'vue/base/setup' || config.files) return config
+
+  return {
+    ...config,
+    files: vueFiles
+  }
+})
 
 export default antfu(
   {
@@ -11,11 +22,10 @@ export default antfu(
     stylistic: false,
     lessOpinionated: true
   },
-  ...pluginVue.configs['flat/recommended'],
+  ...vueRecommended,
   eslintPluginPrettierRecommended,
   {
     rules: {
-      'vue/block-order': 0,
       'no-console': 0,
       'node/prefer-global/process': 0,
       'function-paren-newline': ['error', 'multiline'],
@@ -28,6 +38,13 @@ export default antfu(
           consistent: true
         }
       ]
+    }
+  },
+  {
+    files: vueFiles,
+    rules: {
+      'vue/multi-word-component-names': 0,
+      'vue/block-order': 0
     }
   }
 )
